@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css" rel="stylesheet"
+    />
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="emailForm">
+      <table>
+        <tr>
+          <td>Name</td>
+          <td>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Email</label>
+          </td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Message</label>
+          </td>
+          <td>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Send" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
